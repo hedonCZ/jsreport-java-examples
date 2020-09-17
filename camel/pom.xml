@@ -21,6 +21,7 @@
     <artifactId>jsreport-java-example-camel</artifactId>
 
     <dependencies>
+        <!-- jsreport -->
         <dependency>
             <groupId>io.github.hedoncz</groupId>
             <artifactId>jsreport-javaclient</artifactId>
@@ -37,19 +38,13 @@
             <artifactId>camel-main</artifactId>
             <version>${camel.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-gson</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
 
         <!-- logging -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>${log4j2-version}</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>${logback-version}</version>
-        </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
