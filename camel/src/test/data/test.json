@@ -1,0 +1,11 @@
+{
+  "template" : {
+    "content" : "Hello world from {{name}}!",
+    "engine" : "handlebars",
+    "recipe" : "chrome-pdf"
+  },
+  "data": {
+    "name" : "camel"
+  },
+  "options" : {}
+}
