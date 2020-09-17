@@ -22,7 +22,6 @@ public class RenderRoute extends RouteBuilder {
                 .setBody(simple("${body.content}"))
                 .setHeader("CamelFileName", simple("${header.CamelFileName}.pdf"))
                 .to("file:./out")
-                .log(LoggingLevel.INFO, "${body}")
                 ;
     }
 }
